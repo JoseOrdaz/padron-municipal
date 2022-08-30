@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "tw-elements";
 import SimpleLineChart from "./components/SimpleLineChart";
+import StackedAreaChart from "./components/StackedAreaChart";
 
 
 
@@ -67,11 +68,40 @@ export const App = () => {
 
   return (
     <>
-          
+
+
+
+
     <div className=" bg-white max-w-6xl mt-10 p-10 shadow rounded-xl items-center relative mb-10 m-auto min-h-screen">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="lg:text-center">
+          <h2 className="text-lg font-semibold text-blue-500">38.712 personas</h2>
+          <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-600 sm:text-4xl">
+          Población total
+          </p>
+          <p className="mt-4 max-w-2xl text-md text-gray-500 lg:mx-auto">
+          <strong>Fuente:	</strong>	INE - Revisión del Padrón Municipal.
+          <strong> Periodo: </strong>Anual 2021
+      
+          
+          </p>
+        </div>
+        </div>
+  
+    <div className=" bg-white mt-16 border p-10 shadow-md rounded-xl">
+    <p className="mb-8 text-center text-xl text-gray-500">
+      
+      <strong>Gráfica comparativa:	</strong> Número de habitantes desde el 2002 hasta el 2021
+      
+            </p>
+    <SimpleLineChart></SimpleLineChart>
+    </div>
+    <div className="relative pt-8 pb-10 px-4 sm:px-6 lg:px-8 mx-auto md:grid items-center">
+
+    </div>
           <div
         id="total-habitantes"
-        className="max-w-7xl mx-auto mb-5"
+        className="max-w-7xl mx-auto mt-10 mb-5"
       >
         <div className="accordion" id="accordionExample">
           <div className="accordion-item bg-white border border-gray-200">
@@ -322,19 +352,7 @@ export const App = () => {
     
   </div>
       </div>
-      <>
-      <div className=" max-w-2xl mx-auto lg:max-w-none">
-    <div className="relative pt-8 pb-10 px-4 sm:px-6 lg:px-8 mx-auto md:grid items-center">
-      <h1 className="text-gray-600 font-black text-4xl text-center ">
-        Gráfica de número de habitantes
-      </h1>
-      <p className="mt-4 text-center text-xl text-gray-500">
-        Encuentra información del mundo de la informática.
-      </p>
-    </div>
-    </div>
-      </>
-      <SimpleLineChart></SimpleLineChart>
+
       </div>
       
     </>

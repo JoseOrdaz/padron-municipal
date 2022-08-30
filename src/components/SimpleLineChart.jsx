@@ -6,7 +6,8 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
+  ResponsiveContainer
 } from "recharts";
 
 const data = [
@@ -149,6 +150,6 @@ export default function SimpleLineChart() {
           ))}
           
         </LineChart>
-   
+       
   );
 }
